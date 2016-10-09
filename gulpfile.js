@@ -1,4 +1,4 @@
 requireDir = require("require-dir");
 requireDir('./tasks', {
-    recurse: true
+    recurse: true // 递归
 });

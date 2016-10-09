@@ -8,6 +8,7 @@ var config = require('../config/config.js');
 // 检查脚本
 gulp.task('lint', function() {
     console.log('lint开始');
+    console.log(process.env.NODE_ENV);
     // 这里的路径是按照require之后文件的位置的相对路径
     return gulp.src(config.output + 'js/*.js')
         .pipe(jshint())
